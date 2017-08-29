@@ -3,6 +3,13 @@
 >
 >Author: Dariusz Porowski
 
+## Table of Contents
+1. [Create a new Azure Active Directory tenant](#create-a-new-azure-active-directory-tenant)
+2. [(Option 1) Activate a Microsoft Azure Pass subscription](#option-1-activate-a-microsoft-azure-pass-subscription)
+3. [(Option 2) Activate a free Microsoft Azure Trial subscription](#option-2-activate-a-free-microsoft-azure-trial-subscription)
+4. [Deploy developer environment](#deploy-developer-environment)
+
+
 ## Create a new Azure Active Directory tenant
 1. Open a browser in **InPrivate** session, and navigate to [https://account.azure.com/organization](https://account.azure.com/organization)
 2. Fill the form with your data (make sure a contact e-mail address, and a mobile number are not fake). Moreover, a domain name needs to be unique globally (for training purpose, you can use a pattern like **\<your initials\>\<today's date in YYYYMMDD format\>.onmicrosoft.com**, e.g., **jd20170821.onmicrosoft.com**). For user ID you can use, e.g., **GlobalAdmin**, then your Work account full name will be **GlobalAdmin@jd20170821.onmicrosoft.com**
