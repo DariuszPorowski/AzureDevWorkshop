@@ -11,7 +11,7 @@
     "Name": "Dariusz Porowski",
     "JobTitle": "Senior Technical Evangelist",
     "Company": "Microsoft",
-    "Division": "Commercial Software Engineering (CSE)",
+    "Division": "Commercial Software Engineering (CSE)",
     "WhatIdo": "I empower developers to do epic stuff to achieve more for their companies",
     "TechnologyFocus": "Microsoft Azure, DevOps, Automation, Containers, Serverless, and more..."
   },
