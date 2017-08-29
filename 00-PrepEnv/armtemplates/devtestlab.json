@@ -1,0 +1,252 @@
+{
+   "$schema":"http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+   "contentVersion":"1.0.0.0",
+   "parameters":{
+      "labName":{
+         "type":"string",
+         "defaultValue":"AzureDev"
+      },
+      "userName":{
+         "type":"string",
+         "defaultValue":"AzureDev"
+      },
+      "userPassword":{
+         "type":"securestring",
+         "defaultValue":"Passw0rd1!"
+      }
+   },
+   "variables":{
+      "labName":"[concat(parameters('labName'), 'dtl')]",
+      "apiVersion":"2017-04-26-preview",
+      "vmName":"DevVM",
+      "vmSize":"Standard_D4s_v3"
+   },
+   "resources":[
+      {
+         "apiVersion":"[variables('apiVersion')]",
+         "name":"[variables('labName')]",
+         "type":"Microsoft.DevTestLab/labs",
+         "location":"[resourceGroup().Location]",
+         "properties":{
+            "labStorageType":"Premium"
+         },
+         "resources":[
+            {
+               "apiVersion":"[variables('apiVersion')]",
+               "name":"LabVmsShutdown",
+               "location":"[resourceGroup().Location]",
+               "type":"schedules",
+               "dependsOn":[
+                  "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
+               ],
+               "properties":{
+                  "status":"Enabled",
+                  "timeZoneId":"Central European Standard Time",
+                  "dailyRecurrence":{
+                     "time":"1900"
+                  },
+                  "taskType":"LabVmsShutdownTask",
+                  "notificationSettings":{
+                     "status":"Disabled",
+                     "timeInMinutes":15
+                  }
+               }
+            },
+            {
+               "apiVersion":"[variables('apiVersion')]",
+               "name":"[variables('labName')]",
+               "type":"virtualNetworks",
+               "location":"[resourceGroup().Location]",
+               "dependsOn":[
+                  "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
+               ]
+            },
+            {
+               "type":"formulas",
+               "name":"[variables('vmName')]",
+               "apiVersion":"[variables('apiVersion')]",
+               "scale":null,
+               "properties":{
+                  "description":"Formula for DevVM.",
+                  "osType":"Windows",
+                  "formulaContent":{
+                     "properties":{
+                        "size":"[variables('vmSize')]",
+                        "userName":"[parameters('userName')]",
+                        "password":"",
+                        "isAuthenticationWithSshKey":false,
+                        "labSubnetName":"[concat(variables('labName'), 'Subnet')]",
+                        "labVirtualNetworkId":"[concat('/virtualnetworks/', variables('labName'))]",
+                        "disallowPublicIpAddress":false,
+                        "artifacts":[
+                           {
+                              "artifactId":"/artifactsources/public repo/artifacts/windows-docker",
+                              "parameters":[
+
+                              ]
+                           },
+                           {
+                              "artifactId":"/artifactsources/public repo/artifacts/windows-git",
+                              "parameters":[
+
+                              ]
+                           },
+                           {
+                              "artifactId":"/artifactsources/public repo/artifacts/windows-servicefabricsdk",
+                              "parameters":[
+                                 {
+                                    "name":"VSVersion",
+                                    "value":"Visual Studio 2017"
+                                 }
+                              ]
+                           },
+                           {
+                              "artifactId":"/artifactsources/public repo/artifacts/windows-ssms",
+                              "parameters":[
+
+                              ]
+                           },
+                           {
+                              "artifactId":"/artifactsources/public repo/artifacts/windows-sysinternals",
+                              "parameters":[
+
+                              ]
+                           },
+                           {
+                              "artifactId":"/artifactsources/public repo/artifacts/windows-vscode",
+                              "parameters":[
+
+                              ]
+                           },
+                           {
+                              "artifactId":"/artifactsources/public repo/artifacts/windows-create-url-shortcut",
+                              "parameters":[
+                                 {
+                                    "name":"ShortcutName",
+                                    "value":"Azure Portal"
+                                 },
+                                 {
+                                    "name":"ShortcutTargetPath",
+                                    "value":"https://portal.azure.com"
+                                 }
+                              ]
+                           },
+                           {
+                              "artifactId":"/artifactsources/public repo/artifacts/windows-chocolatey",
+                              "parameters":[
+                                 {
+                                    "name":"packages",
+                                    "value":"azurestorageexplorer"
+                                 }
+                              ]
+                           },
+                           {
+                              "artifactId":"/artifactsources/public repo/artifacts/windows-7zip",
+                              "parameters":[
+
+                              ]
+                           }
+                        ],
+                        "galleryImageReference":{
+                           "offer":"VisualStudio",
+                           "publisher":"MicrosoftVisualStudio",
+                           "sku":"VS-2017-Ent-Latest-WS2016",
+                           "osType":"Windows",
+                           "version":"latest"
+                        },
+                        "allowClaim":false,
+                        "storageType":"Premium"
+                     }
+                  }
+               },
+               "dependsOn":[
+                  "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
+               ]
+            }
+         ]
+      },
+      {
+         "apiVersion":"[variables('apiVersion')]",
+         "type":"Microsoft.DevTestLab/labs/virtualmachines",
+         "name":"[concat(variables('labName'), '/', variables('vmName'))]",
+         "location":"[resourceGroup().location]",
+         "properties":{
+            "labVirtualNetworkId":"[resourceId('Microsoft.DevTestLab/labs/virtualnetworks', variables('labName'), variables('labName'))]",
+            "notes":"Visual Studio Enterprise 2017 (latest release) on Windows Server 2016 (x64)",
+            "galleryImageReference":{
+               "offer":"VisualStudio",
+               "publisher":"MicrosoftVisualStudio",
+               "sku":"VS-2017-Ent-Latest-WS2016",
+               "osType":"Windows",
+               "version":"latest"
+            },
+            "size":"[variables('vmSize')]",
+            "userName":"[parameters('userName')]",
+            "sshKey":"",
+            "password":"[parameters('userPassword')]",
+            "isAuthenticationWithSshKey":false,
+            "labSubnetName":"[concat(variables('labName'), 'Subnet')]",
+            "disallowPublicIpAddress":false,
+            "artifacts":[
+               {
+                  "artifactId":"[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-docker')]"
+               },
+               {
+                  "artifactId":"[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-git')]"
+               },
+               {
+                  "artifactId":"[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-ServiceFabricSDK')]",
+                  "parameters":[
+                     {
+                        "name":"VSVersion",
+                        "value":"Visual Studio 2017"
+                     }
+                  ]
+               },
+               {
+                  "artifactId":"[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-ssms')]"
+               },
+               {
+                  "artifactId":"[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-sysinternals')]"
+               },
+               {
+                  "artifactId":"[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-vscode')]"
+               },
+               {
+                  "artifactId":"[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-create-url-shortcut')]",
+                  "parameters":[
+                     {
+                        "name":"ShortcutName",
+                        "value":"Azure Portal"
+                     },
+                     {
+                        "name":"ShortcutTargetPath",
+                        "value":"https://portal.azure.com"
+                     }
+                  ]
+               },
+               {
+                  "artifactId":"[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-chocolatey')]",
+                  "parameters":[
+                     {
+                        "name":"packages",
+                        "value":"azurestorageexplorer"
+                     }
+                  ]
+               },
+               {
+                  "artifactId":"[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-7zip')]",
+                  "parameters":[
+
+                  ]
+               }
+            ],
+            "storageType":"Premium",
+            "allowClaim":false
+         },
+         "dependsOn":[
+            "[resourceId('Microsoft.DevTestLab/labs/virtualnetworks', variables('labName'), variables('labName'))]"
+         ]
+      }
+   ]
+}
