@@ -1,7 +1,7 @@
 ﻿# Prepare development environment
->Last updated: 8/29/2017
+>Last update: 8/29/2017
 >
->Author: Dariusz Porowski
+>Author: [Dariusz Porowski](http://DariuszPorowski.MS/about/)
 
 ## Table of Contents
 1. [Create a new Azure Active Directory tenant](#create-a-new-azure-active-directory-tenant)
