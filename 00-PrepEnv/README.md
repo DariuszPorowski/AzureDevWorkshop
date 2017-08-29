@@ -1,4 +1,7 @@
-﻿# Prepare your development environment
+﻿# Prepare development environment
+>Last updated: 8/29/2017
+>
+>Author: Dariusz Porowski
 
 ## Create a new Azure Active Directory tenant
 1. Open a browser in **InPrivate** session, and navigate to [https://account.azure.com/organization](https://account.azure.com/organization)
