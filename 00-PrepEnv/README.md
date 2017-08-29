@@ -17,6 +17,8 @@
 
 3. Click **Continue**, and after your new Azure AD will be created, close the browser.
 
+[Scroll to Top](#prepare-development-environment)
+
 ## (Option 1) Activate a Microsoft Azure Pass subscription
 1. Ask the Trainer for an activation code.
 2. Open a browser in **InPrivate** session, and navigate to [https://www.microsoftazurepass.com/Home/HowTo](https://www.microsoftazurepass.com/Home/HowTo)
@@ -24,6 +26,8 @@
 ![Sign in form](_img/signin.png)
 
 4. After successful Microsoft Azure subscription activation close the browser.
+
+[Scroll to Top](#prepare-development-environment)
 
 ## (Option 2) Activate a free Microsoft Azure Trial subscription
 1. Open a browser in **InPrivate** session, and navigate to [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free)
@@ -40,6 +44,8 @@
 
 6. Close the browser.
 
+[Scroll to Top](#prepare-development-environment)
+
 ## Deploy developer environment
 1. Click on **Deploy to Azure** button below.
 
@@ -54,3 +60,4 @@
 4. Click **Connect**, save and open RDP file, and login using default credentials: **DevVM\AzureDev** for username, and **Passw0rd1!** for password.
 ![DevTest Labs - My virtual machines](_img/rdpconnectvm.png)
 
+[Scroll to Top](#prepare-development-environment)
