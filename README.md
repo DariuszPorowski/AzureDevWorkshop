@@ -1,12 +1,11 @@
 # Microsoft Azure Workshop for Developers
->Last updated: 8/29/2017
->
->Author: Dariusz Porowski
+
 
 ## Labs
 0. [Prepare development environment](00-PrepEnv/README.md)
 
 ## Author
+```json
 {
   "AboutMe": {
     "Name": "Dariusz Porowski",
@@ -24,9 +23,10 @@
     "LinkedIn": "https://www.linkedin.com/in/DariuszPorowski"
   }
 }
+```
 
 ## Support
-Support for the project does not exist, but you can submit a bug report, a feature request or participate in discussions through on GitHub Issue Tracker.
+Support for the project does not exist, but you can submit a bug report, a idea request or participate in discussions through on GitHub Issue Tracker.
 
 ## Code of Conduct
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
