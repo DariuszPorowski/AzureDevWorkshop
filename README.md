@@ -2,7 +2,7 @@
 
 ## Prerequisites
 1. [Microsoft Azure subscription](./00-PreAzure/)
-2. [Development environment with Visual Studio](../00-PreDevEnv/)
+2. [Development environment with Visual Studio](./00-PreDevEnv/)
 
 ## Hands-On Labs
 1. 
