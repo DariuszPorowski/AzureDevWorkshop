@@ -43,3 +43,6 @@
 6. Close the browser.
 
 [Scroll to Top](#prepare-microsoft-azure-subscription)
+
+## 
+[Back to the main page](../)
