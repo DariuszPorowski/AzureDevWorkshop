@@ -3,11 +3,14 @@
 >
 >Author: [Dariusz Porowski](http://DariuszPorowski.MS/about/)
 
-## Table of Contents
-1. [(Option 1) Deploy developer environment](#option-1-deploy-developer-environment)
-2. [(Option 2) Setup developer machine](#option-2-setup-developer-machine)
+## Exercises
+This hands-on lab includes the following exercises:
+* [Exercise 1A (Option 1): Deploy developer environment](#exercise-1a-option-1-deploy-developer-environment)
+* [Exercise 1B (Option 2): Setup developer machine](#exercise-1b-option-2-setup-developer-machine)
 
-## (Option 1) Deploy developer environment
+Estimated time to complete this lab: **60** minutes.
+
+## Exercise 1A (Option 1): Deploy developer environment
 1. Click on **Deploy to Azure** button below.
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fdaporolibstg.blob.core.windows.net%2Fshare%2Ftemplates%2Fdevtestlab.json" target="_blank">![Deploy to Azure](https://azuredeploy.net/deploybutton.png)</a>
@@ -25,6 +28,7 @@
 
 [Scroll to Top](#prepare-development-environment)
 
-## (Option 2) Setup developer machine
+## Exercise 1B (Option 2): Setup developer machine
+Coming soon...
 
 [Scroll to Top](#prepare-development-environment)
