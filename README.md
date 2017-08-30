@@ -1,8 +1,8 @@
 # Microsoft Azure Workshop for Developers
 
 ## Prerequisites
-1. [Microsoft Azure subscription](00-PreAzure/)
-2. [Development environment with Visual Studio](00-PreDevEnv/)
+1. [Microsoft Azure subscription](./00-PreAzure/)
+2. [Development environment with Visual Studio](../00-PreDevEnv/)
 
 ## Hands-On Labs
 1. 
@@ -35,4 +35,4 @@ Support for the project does not exist :grinning:, but you can submit a bug repo
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## License
-The extension is licensed under the MIT License (MIT), see [license](LICENSE).
+The extension is licensed under the MIT License (MIT), see [license](./LICENSE).

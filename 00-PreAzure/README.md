@@ -11,7 +11,7 @@
 ## Create a new Azure Active Directory tenant
 1. Open a browser in **InPrivate** session, and navigate to [https://account.azure.com/organization](https://account.azure.com/organization)
 2. Fill the form with your data (make sure a contact e-mail address, and a mobile number are not fake). Moreover, a domain name needs to be unique globally (for training purpose, you can use a pattern like **\<your initials\>\<today's date in YYYYMMDD format\>.onmicrosoft.com**, e.g., **jd20170821.onmicrosoft.com**). For user ID you can use, e.g., **GlobalAdmin**, then your Work account full name will be **GlobalAdmin@jd20170821.onmicrosoft.com**
-![New Azure Active Directory tenant form](_img/newaadtenant.png)
+![New Azure Active Directory tenant form](./_img/newaadtenant.png)
 
 3. Click **Continue**, and after your new Azure AD will be created, close the browser.
 
@@ -21,7 +21,7 @@
 1. Ask the Trainer for an activation code.
 2. Open a browser in **InPrivate** session, and navigate to [https://www.microsoftazurepass.com/Home/HowTo](https://www.microsoftazurepass.com/Home/HowTo)
 3. On **How To** page you will find all necessary information how to activate a new Microsoft Azure Pass subscription. For "Sign In" use your new Work account, created in previous step, e.g., **GlobalAdmin@jd20170821.onmicrosoft.com**
-![Sign in form](_img/signin.png)
+![Sign in form](../_img/signin.png)
 
 4. After successful Microsoft Azure subscription activation close the browser.
 
