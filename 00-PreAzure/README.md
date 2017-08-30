@@ -45,4 +45,4 @@
 [Scroll to Top](#prepare-microsoft-azure-subscription)
 
 ## 
-[Back to the main page](../)
+[Back to the main page](./)
