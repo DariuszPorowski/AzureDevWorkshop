@@ -1,8 +1,11 @@
 # Microsoft Azure Workshop for Developers
 
+## Prerequisites
+1. [Microsoft Azure subscription](00-PreAzure/)
+2. [Development environment with Visual Studio](00-PreDevEnv/)
 
 ## Hands-On Labs
-0. [Prepare development environment](00-PrepEnv/)
+1. 
 
 ## Author
 ```json
