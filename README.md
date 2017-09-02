@@ -8,15 +8,14 @@ The following are required to complete those hands-on labs:
 ## Hands-On Labs
 Below you can find links to external content with HOLs:
 1. [Using Azure Blob Storage](https://github.com/MSRConnections/Azure-training-course/blob/master/Content/Storage/Azure%20Storage%20HOL.md)
-2. [Using Cognitive Services](https://github.com/MSRConnections/Azure-training-course/blob/master/Content/Cognitive%20Services/Azure%20Storage%20and%20Cognitive%20Services%20HOL%20(MVC).md)
+2. [Using Microsoft Cognitive Services](https://github.com/MSRConnections/Azure-training-course/blob/master/Content/Cognitive%20Services/Azure%20Storage%20and%20Cognitive%20Services%20HOL%20(MVC).md)
 3. [Using Azure Functions](https://github.com/Microsoft/TechnicalCommunityContent/blob/master/Cloud%20Computing/Azure%20Functions/Session%202%20-%20Hands%20On/Azure%20Functions%20HOL%20(C%23).md)
 4. [Using Azure SQL Database](https://github.com/Microsoft/TechnicalCommunityContent/blob/master/Data/Azure%20SQL%20Database/Session%202%20-%20Hands%20On/readme.md)
 5. [Using Azure Cosmos DB and the DocumentDB API](https://github.com/Microsoft/TechnicalCommunityContent/blob/master/Data/Azure%20DocumentDB/Session%202%20-%20Hands%20On/readme.md)
 6. [Handling Big Data with Azure Data Lake](https://github.com/MSRConnections/Azure-training-course/blob/master/Content/Data%20Lake/Azure%20Data%20Lake%20HOL.md)
 7. [Docker Orchestration and the Azure Container Service](https://github.com/Microsoft/TechnicalCommunityContent/blob/cbb0db2b80c9ade78a6fd047c45d08edd4e0b304/Open%20Dev%20Framework/Docker/Session%203%20-%20Hands%20On/readme.md)
-8. [DevOps - Continuous Integration & Continuous Deployment](https://github.com/Microsoft/TechnicalCommunityContent/blob/master/DevOps/DevOps/Session%203%20-%20Practical%20DevOps/HOL%203.2%20-%20VotingApp%20Full%20Continuous%20Integration%20Deployment/HOL%203.2.md)
-9. [Building Intelligent Bots with the Bot Framework](https://github.com/MSRConnections/Azure-training-course/blob/master/Content/Bots/Microsoft%20Bot%20Framework%20HOL.md)
-
+8. [DevOps with Visual Studio Team Services (VSTS) - Continuous Integration & Continuous Deployment](https://github.com/Microsoft/TechnicalCommunityContent/blob/master/DevOps/DevOps/Session%203%20-%20Practical%20DevOps/HOL%203.2%20-%20VotingApp%20Full%20Continuous%20Integration%20Deployment/HOL%203.2.md)
+9. [Building intelligent bots with the Microsoft Bot Framework](https://github.com/MSRConnections/Azure-training-course/blob/master/Content/Bots/Microsoft%20Bot%20Framework%20HOL.md)
 
 ## Author
 ```json
@@ -40,10 +39,10 @@ Below you can find links to external content with HOLs:
 ```
 
 ## Support
-Support for the project does not exist :grinning:, but you can submit a bug report, an idea request or participate in discussions through GitHub Issue Tracker.
+Support for the project does not exist :grinning:, but you can submit a bug, an issue, an idea request through [GitHub Issue Tracker](https://aka.ms/AzureDevWorkshop/Issues).
 
 ## Code of Conduct
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## License
-The extension is licensed under the MIT License (MIT), see [license](./LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for rights and limitations.

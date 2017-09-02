@@ -30,5 +30,12 @@ Estimated time to complete this lab: **60** minutes.
 
 ## Exercise 1B (Option 2): Setup developer machine
 Coming soon...
+1. [Microsoft Windows 10 (version 1703)](https://www.microsoft.com/en-us/windowsforbusiness/try)
+2. [Microsoft Visual Studio 2017 (version 15.3)](https://www.visualstudio.com/downloads/)
+3. [Microsoft Visual Studio Code](https://code.visualstudio.com/)
+4. [Microsoft Azure Storage Explorer](http://www.storageexplorer.com/)
+5. [Microsoft Azure CLI 2.0](https://azure.github.io/projects/clis/)
+6. [Microsoft Azure PowerShell](https://azure.github.io/projects/clis/)
+7. [Docker for Windows](https://www.docker.com/docker-windows)
 
 [Scroll to Top](#prepare-development-environment)
