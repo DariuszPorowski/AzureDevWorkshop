@@ -12,7 +12,7 @@ This hands-on lab includes the following exercises:
 
 Estimated time to complete this lab: **15** minutes.
 
-## Exercise 1: Create a new Azure Active Directory tenant
+### Exercise 1: Create a new Azure Active Directory tenant
 1. Open a browser in **InPrivate** session, and navigate to [https://account.azure.com/organization](https://account.azure.com/organization)
 2. Fill the form with your data (make sure a contact e-mail address, and a mobile number are not fake). Moreover, a domain name needs to be unique globally (for training purpose, you can use a pattern like **\<your initials\>\<today's date in YYYYMMDD format\>.onmicrosoft.com**, e.g., **jd20170821.onmicrosoft.com**). For user ID you can use, e.g., **GlobalAdmin**, then your Work account full name will be **GlobalAdmin@jd20170821.onmicrosoft.com**
 
@@ -22,9 +22,9 @@ _New Azure Active Directory tenant form_
 
 3. Click **Continue**, and after your new Azure AD will be created, close the browser.
 
-[Scroll to Top](#prepare-microsoft-azure-subscription)
+[Scroll to Top](#exercises)
 
-## Exercise 2A (Option 1): Activate a Microsoft Azure Pass subscription
+### Exercise 2A (Option 1): Activate a Microsoft Azure Pass subscription
 1. Ask the Trainer for an activation code.
 2. Open a browser in **InPrivate** session, and navigate to [https://www.microsoftazurepass.com/Home/HowTo](https://www.microsoftazurepass.com/Home/HowTo)
 3. On **How To** page you will find all necessary information how to activate a new Microsoft Azure Pass subscription. For "Sign In" use your new Work account, created in previous step, e.g., **GlobalAdmin@jd20170821.onmicrosoft.com**
@@ -34,9 +34,9 @@ _Sign in form_
 
 4. After successful Microsoft Azure subscription activation close the browser.
 
-[Scroll to Top](#prepare-microsoft-azure-subscription)
+[Scroll to Top](#exercises)
 
-## Exercise 2B (Option 2): Activate a free Microsoft Azure Trial subscription
+### Exercise 2B (Option 2): Activate a free Microsoft Azure Trial subscription
 1. Open a browser in **InPrivate** session, and navigate to [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free)
 2. Click on **Start free** button.
 
@@ -64,9 +64,9 @@ _Ready trial account page_
 
 6. Close the browser.
 
-[Scroll to Top](#prepare-microsoft-azure-subscription)
+[Scroll to Top](#exercises)
 
-## Exercise 3: Set language and regional settings for Azure Portal
+### Exercise 3: Set language and regional settings for Azure Portal
 1. Open a browser in **InPrivate** session, and navigate to [https://portal.azure.com](https://portal.azure.com)
 2. On a top-right corner, click on the **Setting** button (gear icon).
 
@@ -82,4 +82,4 @@ _Language and Regional format settings_
 
 4. Close the browser.
 
-[Scroll to Top](#prepare-microsoft-azure-subscription)
+[Scroll to Top](#exercises)
