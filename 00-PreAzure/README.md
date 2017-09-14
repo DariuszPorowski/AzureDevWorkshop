@@ -17,6 +17,7 @@ Estimated time to complete this lab: **15** minutes.
 2. Fill the form with your data (make sure a contact e-mail address, and a mobile number are not fake). Moreover, a domain name needs to be unique globally (for training purpose, you can use a pattern like **\<your initials\>\<today's date in YYYYMMDD format\>.onmicrosoft.com**, e.g., **jd20170821.onmicrosoft.com**). For user ID you can use, e.g., **GlobalAdmin**, then your Work account full name will be **GlobalAdmin@jd20170821.onmicrosoft.com**
 
 ![New Azure Active Directory tenant form](./_img/newaadtenant.png)
+
 _New Azure Active Directory tenant form_
 
 3. Click **Continue**, and after your new Azure AD will be created, close the browser.
@@ -40,21 +41,25 @@ _Sign in form_
 2. Click on **Start free** button.
 
 ![Microsoft Azure Trial subscription page](./_img/azuretrial.png)
+
 _Microsoft Azure Trial subscription page_
 
 3. Sign In use your new Work account, created in previous step, e.g., **GlobalAdmin@jd20170821.onmicrosoft.com**
 
 ![Sign in form](./_img/signin.png)
+
 _Sign in form_
 
 4. On **Free trial sign up** page fill the form with your data (make sure a contact e-mail address, and a mobile number are not fake). In this case, you need to provide valid credit card information to verify your identity. At the end click **Sign up** button.
 
 ![Free trial sign up page](./_img/trialsignup.png)
+
 _Free trial sign up page_
 
 5. Wait a few minutes until you see a page with the **Get started with your Azure subscription** button.
 
 ![Ready trial account page](./_img/readytrial.png)
+
 _Ready trial account page_
 
 6. Close the browser.
@@ -66,11 +71,13 @@ _Ready trial account page_
 2. On a top-right corner, click on the **Setting** button (gear icon).
 
 ![Settings Gear](./_img/settingsgear.png)
+
 _Settings Gear_
 
 3. Scroll to the bottom and set **English** for **Language**, and **English (United States)** for the **Regional format**, then click **Apply**.
 
 ![Language and Regional format settings](./_img/langreg.png)
+
 _Language and Regional format settings_
 
 4. Close the browser.
