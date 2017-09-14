@@ -1,5 +1,5 @@
 ﻿# Prepare Microsoft Azure Subscription
->Last update: 8/30/2017
+>Last update: 9/14/2017
 >
 >Author: [Dariusz Porowski](http://DariuszPorowski.MS/about/)
 
@@ -8,6 +8,7 @@ This hands-on lab includes the following exercises:
 * [Exercise 1: Create a new Azure Active Directory tenant](#exercise-1-create-a-new-azure-active-directory-tenant)
 * [Exercise 2A (Option 1): Activate a Microsoft Azure Pass subscription](#exercise-2a-option-1-activate-a-microsoft-azure-pass-subscription)
 * [Exercise 2B (Option 2): Activate a free Microsoft Azure Trial subscription](#exercise-2b-option-2-activate-a-free-microsoft-azure-trial-subscription)
+* [Exercise 3: Set language and regional settings for Azure Portal](#exercise-3-set-language-and-regional-settings-for-azure-portal)
 
 Estimated time to complete this lab: **15** minutes.
 
@@ -57,5 +58,21 @@ _Free trial sign up page_
 _Ready trial account page_
 
 6. Close the browser.
+
+[Scroll to Top](#prepare-microsoft-azure-subscription)
+
+## Exercise 3: Set language and regional settings for Azure Portal
+1. Open a browser in **InPrivate** session, and navigate to [https://portal.azure.com](https://portal.azure.com)
+2. On a top-right corner, click on the **Setting** button (gear icon).
+
+![Settings Gear](./_img/settingsgear.png)
+_Settings Gear_
+
+3. Scroll to the bottom and set **English** for **Language**, and **English (United States)** for the **Regional format**, then click **Apply**.
+
+![Language and Regional format settings](./_img/langreg.png)
+_Language and Regional format settings_
+
+4. Close the browser.
 
 [Scroll to Top](#prepare-microsoft-azure-subscription)
