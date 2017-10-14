@@ -172,7 +172,7 @@
          "location":"[resourceGroup().location]",
          "properties":{
             "labVirtualNetworkId":"[resourceId('Microsoft.DevTestLab/labs/virtualnetworks', variables('labName'), variables('labName'))]",
-            "notes":"Visual Studio Enterprise 2017 (latest release) on Windows Server 2016 (x64)",
+            "notes":"Visual Studio Community 2017 (latest release) on Windows Server 2016 (x64)",
             "galleryImageReference":{
                "offer":"VisualStudio",
                "publisher":"MicrosoftVisualStudio",
