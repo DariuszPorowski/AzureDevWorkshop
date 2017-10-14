@@ -1,5 +1,5 @@
 ﻿# Prepare development environment
->Last update: 8/30/2017
+>Last update: 10/14/2017
 >
 >Author: [Dariusz Porowski](http://DariuszPorowski.MS/about/)
 
@@ -13,7 +13,7 @@ Estimated time to complete this lab: **60** minutes.
 ## Exercise 1A (Option 1): Deploy developer environment
 1. Click on **Deploy to Azure** button below.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fdaporolibstg.blob.core.windows.net%2Fshare%2Ftemplates%2Fdevtestlab.json" target="_blank">![Deploy to Azure](https://azuredeploy.net/deploybutton.png)</a>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FDariuszPorowski%2FAzureDevWorkshop%2Fmaster%2F00-PreDevEnv%2Farmtemplates%2Fdevtestlab.json" target="_blank">![Deploy to Azure](https://azuredeploy.net/deploybutton.png)</a>
 
 2. Fill the parameters - for **Resource Group** select **Create new** and input name using a pattern like **\<your initials\>\<today's date in YYYYMMDD format\>**, e.g., **jd20170821**, set **Location** to **West Europe**, input name for **Lab Name** using the same pattern like for Resource Group, e.g., **jd20170821**. For **User Name** and **User Password** you can provide your values or use default: **AzureDev** and **Passw0rd1!**
 ![Developer environment deployment form](./_img/devtestdeploy.png)
