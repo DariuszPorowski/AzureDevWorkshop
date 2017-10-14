@@ -176,7 +176,7 @@
             "galleryImageReference":{
                "offer":"VisualStudio",
                "publisher":"MicrosoftVisualStudio",
-               "sku":"VS-2017-Ent-Latest-WS2016",
+               "sku":"VS-2017-Comm-Latest-WS2016",
                "osType":"Windows",
                "version":"latest"
             },
